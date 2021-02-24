@@ -1,0 +1,71 @@
+/* Universal selector; use with caution */
+
+* {
+ !border: 1px solid #000;
+}
+
+/* General layout */
+
+body {
+  background-color:#FFE6EE;
+  max-width: 48rem;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+
+h2, p {
+color: red;
+}
+
+/* header */
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+  border: 0.1px solid #000;
+  border-color: red;
+  text-align: center;
+  line-height: 0.8em;
+  color: red;
+}
+
+.flex-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-box-wrap{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+
+.flex-box > div{
+  margin:1em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ol{
+  text-align: left;
+  text-transform: none;
+  font-style: none;
+  color: red;
+}
+
+
+ul {
+  border: 1px solid #000;
+  border-color: red;
+}
+
+ul > li {
+  text-align: left;
+  white-space: nowrap;
+  color: red;
+}
