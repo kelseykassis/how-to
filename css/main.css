@@ -71,6 +71,7 @@ summary{
 /*needed to add-worked before in js bin*/
 details > summary {
     list-style-type: none;
+    cursor: pointer;
 }
 
 /*Google Chrome workaround found via Stack Overflow*/
