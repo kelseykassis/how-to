@@ -30,6 +30,7 @@ header h1 {
   color: red;
 }
 
+
 .flex-box{
   display: flex;
   justify-content: space-between;
@@ -47,8 +48,8 @@ header h1 {
 }
 
 img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
 }
 
 ol{
@@ -57,6 +58,36 @@ ol{
   font-style: none;
   color: red;
 }
+
+details{
+  color: red;
+}
+
+summary{
+  font-size: large;
+  font-weight: bold;
+}
+
+/*Google Chrome workaround found via Stack Overflow*/
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: '→';
+ }
+
+details[open] > summary::before {
+    content: '↓';
+}
+
+/*Adds a linebreak by forcing browser to 
+  read whitespace.*/
+.needing-space::before {
+      content: "\a";
+      white-space: pre;
+}
+
 
 
 ul {
