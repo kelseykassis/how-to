@@ -14,7 +14,7 @@ body {
 }
 
 
-h2, p {
+h2, p, .image-credit {
 color: red;
 }
 
@@ -48,8 +48,10 @@ header h1 {
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: auto;
+  max-width: 50%;
+  height: auto;
+
 }
 
 ol{
@@ -81,7 +83,7 @@ details[open] > summary::before {
     content: '↓';
 }
 
-/*Adds a linebreak by forcing browser to 
+/*Adds a linebreak by forcing browser to
   read whitespace.*/
 .needing-space::before {
       content: "\a";
