@@ -6,6 +6,11 @@
 
 /* General layout */
 
+html {
+  font-size: 1rem;
+  font-family: Consolas, monaco, monospace;
+}
+
 body {
   background-color:#FFE6EE;
   max-width: 48rem;
@@ -57,7 +62,6 @@ img {
 ol{
   text-align: left;
   text-transform: none;
-  font-style: none;
   color: red;
 }
 
